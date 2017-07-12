@@ -1,0 +1,23 @@
+<div class="content-box">
+    <div class="main-box">
+        <md-list>
+            <md-list-item>
+                <md-input-container class="input-box">
+                    <input mdInput placeholder="账号" value="" #username>
+                </md-input-container>
+            </md-list-item>
+            <br>
+            <md-list-item>
+                <md-input-container class="input-box">
+                    <input mdInput placeholder="密码" value="" type="password" #password>
+                </md-input-container>
+            </md-list-item>
+            <br>
+            <md-list-item style="text-align:right">
+                <button md-button class="login-button" (click)="loginClicked(username,password)">登陆</button>
+                <button md-button (click)="registClicked()">注册</button>
+            </md-list-item>
+        </md-list>
+        <button md-button (click)="test()">测试跳转到非权限页</button>
+    </div>
+</div>

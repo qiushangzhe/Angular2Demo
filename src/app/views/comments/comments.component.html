@@ -1,0 +1,6 @@
+<md-list>
+    <h3 md-subheader>评论列表</h3>
+    <app-comment-item *ngFor="let item of commentList" [commentItem]=item></app-comment-item>
+</md-list>
+
+<app-comment-box (submit)="addComment($event)"></app-comment-box>

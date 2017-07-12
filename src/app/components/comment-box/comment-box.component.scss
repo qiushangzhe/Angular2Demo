@@ -1,0 +1,13 @@
+.comment-main-box {
+    position: absolute;
+    margin: 0 auto 0 auto;
+    bottom: 0;
+    width: 99%;
+    box-sizing: border-box;
+    .comment-box {
+        width: 80%;
+    }
+    .submit-button {
+        width: 15%;
+    }
+}
