@@ -53,31 +53,48 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng generate component 组件名称
 2.  如果想为一个module中添加新的组件，前提是不使用ng generate component这种方式的话，需要在这个module中引入这个新组件，并在declarations字段中添加这个组件的依赖。
 
+```
 在使用angular-cli创建新的项目的时候有一些细节：
+
 ng new <options...>
+
 --dry-run (Boolean) (Default: false) Run through without making any changes. Will list all files that would have been created when running "ng new".
+
 --verbose (Boolean) (Default: false) Adds more details to output logging.
+
 --skip-install (Boolean) (Default: false) Skip installing packages.
+
 --skip-git (Boolean) (Default: false) Skip initializing a git repository.
+
 --skip-tests (Boolean) (Default: false) Skip creating spec files.
+
 --skip-commit (Boolean) (Default: false) Skip committing the first commit to git.
+
 --directory (String) The directory name to create the app in.
+
 --source-dir (String) (Default: src) The name of the source directory. You can later change the value in ".angular-cli.json" (apps[0].root).
+
 --style (String) (Default: css) The style file default extension. Possible values: css, scss, less, sass, styl(stylus). You can later change the value in ".angular-cli.json" (defaults.styleExt).
- --prefix (String) (Default: app) The prefix to use for all component selectors. You can later change the value in ".angular-cli.json" (apps[0].prefix).
+
+--prefix (String) (Default: app) The prefix to use for all component selectors. You can later change the value in ".angular-cli.json" (apps[0].prefix).
+
 --routing (Boolean) (Default: false) Generate a routing module.
+
 --inline-style (Boolean) (Default: false) Should have an inline style.
+
 --inline-template (Boolean) (Default: false) Should have an inline template.
+
 --minimal (Boolean) (Default: false) Should create a minimal app.
 一般我会选择使用
 ng new xxxx --routing true --style scss --skip-tests true --prefix component前缀
-
+```
 本项目使用的是：
-ng new Ng2MaterialTest --routing true --style scss --skip-tests true
+``ng new Ng2MaterialTest --routing true --style scss --skip-tests true``
 
 接下来是ng server的一些相关的指令
+
+```
 ng serve <options...>
 --environment (String) Defines the build environment.这个是添加环境变量的，这样可以做到对不同的环境进行判断取出不同的url值。
-
-
+```
 
