@@ -98,3 +98,6 @@ ng serve <options...>
 --environment (String) Defines the build environment.这个是添加环境变量的，这样可以做到对不同的环境进行判断取出不同的url值。
 ```
 
+### http请求的都是真实的接口，返回的都是qmock提供的假数据。
+
+myqq：470542573
